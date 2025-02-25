@@ -1,12 +1,13 @@
 import React from 'react'
 import './App.css'
+import PomodoroTimer from './components/pomodoro'
 
 function App() {
  
 
   return (
     <>
-      <div className='text-[30px] text-amber-600'>salom</div>
+      <PomodoroTimer/>
     </>
   )
 }
