@@ -8,34 +8,34 @@ function Sections() {
     <>
        <div className=' container m-auto pt-[50px] p-[10px]'>
 
-         <div className='w-[700px] font-serif font-medium  m-auto '>
-            <h1 className='text-[40px] text-[#1d1212]'>An online Pomodoro Timer to boost your productivity</h1>
+         <div className='w-full sm:w-[600px] md:w-[700px] p-[10px] font-serif font-medium  m-auto '>
+            <h1 className='text-[25px] sm:text-[30px] md:text-[40px] text-[#1d1212]'>An online Pomodoro Timer to boost your productivity</h1>
          </div>
 
-         <div className='w-[700px] font-serif font-medium  m-auto  mt-[50px]'>
-            <h1 className='text-[30px] text-[#1d1212]'>What is Pomofocus ?</h1> 
+         <div className='w-full sm:w-[600px] md:w-[700px] p-[10px] font-serif font-medium  m-auto  mt-[50px]'>
+            <h1 className='text-[25px] sm:text-[30px] text-[#1d1212]'>What is Pomofocus ?</h1> 
             <span className='bg-[#cc7878] w-[50px] h-[5px] block my-[5px]'></span>
-            <p className='text-gray-600'>
+            <p className='text-gray-600 text-[15px] sm:text-[20px]'>
               Pomofocus is a customizable pomodoro timer that works on desktop & mobile browser. The aim of this app is to help you focus on any task you are working on, such as study, writing, or coding. This app is inspired by  
               <span className='text-[#c23333]'> <b><a href="https://www.pomodorotechnique.com">Pomodoro Technique</a></b></span> which is a time management method developed by Francesco Cirillo.
             </p>
          </div>
 
-         <div className='w-[700px] font-serif font-medium  m-auto  mt-[50px]'>
-            <h1 className='text-[30px] text-[#1d1212]'>What is Pomodoro Technique ?</h1> 
+         <div className='w-full sm:w-[600px] md:w-[700px] p-[10px] font-serif font-medium  m-auto  mt-[50px]'>
+            <h1 className='text-[25px] sm:text-[30px] text-[#1d1212]'>What is Pomodoro Technique ?</h1> 
             <span className='bg-[#cc7878] w-[50px] h-[5px] block my-[5px]'></span>
-            <p className='text-gray-600'>
+            <p className='text-gray-600 text-[15px] sm:text-[20px]'>
                The Pomodoro Technique is created by Francesco Cirillo for a more productive way to work and study. The technique uses a timer to break down work into intervals, traditionally 25 minutes in length, separated by short breaks. Each interval is known as a pomodoro, from the Italian word for 'tomato', after the tomato-shaped kitchen timer that Cirillo used as a university student. - 
               <span className='text-[#c23333]'> <b><a href="https://en.wikipedia.org/wiki/Pomodoro_Technique">Wikipedia </a></b></span> 
             </p>
          </div>
 
-         <div className="w-[700px] font-serif font-medium  m-auto  mt-[50px]">
-           <h1 className="text-[30px] text-[#1d1212]">
+         <div className="w-full sm:w-[600px] md:w-[700px] p-[10px] font-serif font-medium  m-auto  mt-[50px]">
+           <h1 className="text-[25px] sm:text-[30px] text-[#1d1212]">
            How to use the Pomodoro Timer?
          </h1>
          <span className='bg-[#cc7878] w-[50px] h-[5px] block my-[5px]'></span>
-       <ol className="list-decimal list-inside space-y-2 text-gray-600 mt-[10px]">
+       <ol className="list-decimal list-inside space-y-2 text-gray-600 mt-[10px] text-[15px] sm:text-[20px]">
         <li>
           <span className="font-bold">Add tasks</span> to work on today
         </li>
@@ -57,12 +57,12 @@ function Sections() {
       </ol>
     </div>
 
-    <div className="w-[700px] font-serif font-medium  m-auto  mt-[50px]">
-      <h2 className="text-[30px] text-[#1d1212]">
+    <div className="w-full sm:w-[600px] md:w-[700px] p-[10px] font-serif font-medium  m-auto  mt-[50px]">
+      <h2 className="text-[25px] sm:text-[30px] text-[#1d1212]">
         Basic Features
       </h2>
       <span className='bg-[#cc7878] w-[50px] h-[5px] block my-[5px]'></span>
-      <ul className="list-disc list-inside space-y-2 text-gray-600 mt-[10px]">
+      <ul className="list-disc list-inside space-y-2 text-gray-600 mt-[10px] text-[15px] sm:text-[20px]">
         <li>
           <span className="font-bold">Estimate Finish Time:</span> Get an estimate of the time required to complete your daily tasks.
         </li>
@@ -78,12 +78,12 @@ function Sections() {
       </ul>
     </div>
 
-    <div className="w-[700px] font-serif font-medium  m-auto  mt-[50px]">
-      <h2 className="text-[30px] text-[#1d1212]">
+    <div className="w-full sm:w-[600px] md:w-[700px] p-[10px] font-serif font-medium  m-auto  mt-[50px]">
+      <h2 className="text-[25px] sm:text-[30px] text-[#1d1212]">
         Premium Features
       </h2>
       <span className='bg-[#cc7878] w-[50px] h-[5px] block my-[5px]'></span>
-      <ul className="list-disc list-inside space-y-2 text-gray-600 mt-[10px]">
+      <ul className="list-disc list-inside space-y-2 text-gray-600 mt-[10px] text-[15px] sm:text-[20px]">
         <li>
           <span className="font-bold">Add Projects: </span> Track how much time you spend on each project.
         </li>
@@ -108,12 +108,12 @@ function Sections() {
       </ul>
     </div>
 
-    <div className="w-[700px] font-serif font-medium  m-auto  mt-[50px]">
-      <h1 className="text-[30px] text-[#1d1212]">
+    <div className="w-full sm:w-[600px] md:w-[700px] p-[10px] font-serif font-medium  m-auto  mt-[50px]">
+      <h1 className="text-[25px] sm:text-[30px] text-[#1d1212]">
         Download App
       </h1>
       <span className='bg-[#cc7878] w-[50px] h-[5px] block my-[5px]'></span>
-      <ul className="list-none space-y-2 text-gray-600">
+      <ul className="list-none space-y-2 text-gray-600 text-[15px] sm:text-[20px]">
         <li>
           <span className="font-bold">For Mac:</span> <span className="text-gray-500"> Coming Soon...</span>
         </li>
@@ -136,8 +136,8 @@ function Sections() {
        <hr />
     
 
-       <footer className="text-center mt-10 text-gray-600">
-        <nav className="flex justify-center space-x-4 text-sm font-bold ">
+       <footer className="text-center mt-10 text-gray-600 p-[10px]">
+        <nav className="block sm:flex sm:justify-center space-x-4 text-sm font-bold ">
           <a href="/" className="hover:text-red-800">HOME</a>
           <a href="https://pomofocus.io/privacy" className="hover:text-red-800">PRIVACY</a>
           <a href="https://pomofocus.io/terms" className="hover:text-red-800">TERMS</a>

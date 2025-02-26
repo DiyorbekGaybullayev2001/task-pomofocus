@@ -6,6 +6,7 @@ import {
   FaEllipsisV,
   FaCheckCircle,
   FaTimes,
+  FaBars,
 } from "react-icons/fa";
 import SettingModal from "./settingmodal";
 import ReportModal from "./reportmodal";
@@ -20,15 +21,24 @@ const Navbar = () => {
 
   const openModal = (type) => setModal(type);
   const closeModal = () => setModal(null);
+  // const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <>
-      <nav className="p-4 flex items-center justify-between border-b border-[#6f6f6fa3] pb-[30px]">
-        <div className="flex items-center gap-2 text-white text-2xl font-bold">
-          <FaCheckCircle />
-          <span>Pomofocus</span>
+      <nav className="p-[5px] sm:p-4 block  md:flex items-center md:justify-between m-auto border-b border-[#6f6f6fa3] pb-[30px]">
+        <div className="flex items-center gap-2 text-white text-2xl font-bold ">
+          <span className="m-auto flex items-center gap-1"><FaCheckCircle />  Pomofocus</span>
         </div>
-        <div className="flex items-center gap-2 ml-[100px]">
+        {/* <button
+          className="md:hidden flex items-center text-2xl text-white"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          <FaBars />
+        </button> */}
+
+        
+
+        <div className="flex items-center gap-2 md:ml-[100px] m-auto mt-[20px] md:mt-0 justify-center">
           <button
             className="flex items-center cursor-pointer gap-2 bg-[#ffffff73] text-white px-3 py-1 rounded-md"
             onClick={() => openModal("report")}
@@ -48,14 +58,36 @@ const Navbar = () => {
             <FaUser /> Sign In
           </button>
           <DropdownMenu isOpen={modal==="menu"} />
-          {/* <button
-            className="flex items-center cursor-pointer bg-[#ffffff73] text-white px-3 py-2 rounded-md"
-            onClick={() => openModal("menu")}
-          >
-            <FaEllipsisV />
-          </button> */}
+          
         </div>
       </nav>
+
+      {/* {
+          menuOpen && (
+            <div className="flex items-center gap-2 ml-[100px]">
+          <button
+            className="flex items-center cursor-pointer gap-2 bg-[#ffffff73] text-white px-3 py-1 rounded-md"
+            onClick={() => openModal("report")}
+          >
+            <FaChartBar /> Report
+          </button>
+          <button
+            className="flex items-center cursor-pointer gap-2 bg-[#ffffff73] text-white px-3 py-1 rounded-md"
+            onClick={() => openModal("setting")}
+          >
+            <FaCog /> Setting
+          </button>
+          <button
+            className="flex items-center cursor-pointer gap-2 bg-[#ffffff73] text-white px-3 py-1 rounded-md"
+            onClick={() => openModal("signin")}
+          >
+            <FaUser /> Sign In
+          </button>
+          <DropdownMenu isOpen={modal==="menu"} />
+          
+        </div>
+          )
+        } */}
 
       {/* Setting Modal */}
       <SettingModal isOpen={modal === "setting"} onClose={closeModal} />
@@ -72,11 +104,6 @@ const Navbar = () => {
           <div className="bg-[#888888f1] p-6 rounded-md shadow-lg w-[400px] text-white text-center">
             <h2 className="text-xl font-bold mb-4">Create Account</h2>
             <button className="w-full flex items-center justify-center gap-2 bg-white text-black px-4 py-2 rounded-md font-semibold mb-4">
-              {/* <img
-                src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
-                alt="Google"
-                className="w-5 h-5"
-              /> */}
               <FcGoogle/>
               Signup with Google
             </button>

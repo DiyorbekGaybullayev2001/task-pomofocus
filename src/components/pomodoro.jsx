@@ -100,30 +100,30 @@ const PomodoroTimer = () => {
         <Navbar/>
         <hr />
       
-      <div className="bg-[#ffffff25] flex flex-col items-center mt-[20px] p-[50px] rounded-xl">
+      <div className="bg-[#ffffff25] flex flex-col items-center mt-[20px] p-[10px] sm:p-[50px] rounded-xl">
 
       
       <div className="flex space-x-4 font-serif">
         <button 
-          className={`px-10 py-1 rounded-lg ${mode === "pomodoro" ? "bg-[#7d5b5b8a] text-white" : "bg-gray-300"}`}
+          className={`px-1 sm:px-10 py-1 rounded-lg ${mode === "pomodoro" ? "bg-[#7d5b5b8a] text-white" : "bg-gray-300"}`}
           onClick={() => handleModeChange("pomodoro", 25)}
         >
           Pomodoro
         </button>
         <button 
-          className={`px-10 py-1 rounded-lg ${mode === "shortBreak" ? "bg-[#507681] text-white" : "bg-gray-300"}`}
+          className={`px-1 sm:px-10 py-1 rounded-lg ${mode === "shortBreak" ? "bg-[#507681] text-white" : "bg-gray-300"}`}
           onClick={() => handleModeChange("shortBreak", 5)}
         >
           Short Break
         </button>
         <button 
-          className={`px-10 py-1 rounded-lg ${mode === "longBreak" ? "bg-[#4f4984] text-white" : "bg-gray-300"}`}
+          className={`px-1 sm:px-10 py-1 rounded-lg ${mode === "longBreak" ? "bg-[#4f4984] text-white" : "bg-gray-300"}`}
           onClick={() => handleModeChange("longBreak", 15)}
         >
           Long Break
         </button>
       </div>
-      <div className="text-[100px] font-mono text-white">{formatTime(time)}</div>
+      <div className="text-[60px] sm:text-[100px] font-mono text-white">{formatTime(time)}</div>
       <div>
         <button
           className="px-6 py-2 bg-white text-black text-xl font-serif rounded-lg mr-2"
@@ -152,15 +152,15 @@ const PomodoroTimer = () => {
           <DropdownMenu2/>
       </div>
 
-      <div className="mt-[40px] p-4 rounded-lg shadow-md border-dashed border-2 border-[#bbbbbbae] w-96">
+      <div className="mt-[40px] p-[5px] sm:p-4 rounded-lg shadow-md border-dashed border-2 border-[#bbbbbbae] w-[330px] sm:w-96">
         {!showTaskForm && (
-          <div className="p-4  rounded-lg cursor-pointer flex items-center space-x-2" onClick={() => setShowTaskForm(true)}>
+          <div className=" p-[5px] sm:p-4 rounded-lg cursor-pointer flex items-center space-x-2" onClick={() => setShowTaskForm(true)}>
             <FaPlus className="text-gray-400" />
             <span className="text-gray-400 font-serif text-[20px] text-center">Add Task</span>
           </div>
         )}
         {showTaskForm && (
-          <div className="p-4 bg-[#ffffffe6] rounded-lg">
+          <div className="p-[5px] sm:p-4 bg-[#ffffffe6] rounded-lg">
             <input 
               type="text" 
               className="w-full px-3 py-3 border border-[#75757583] text-[20px] outline-none rounded-lg mb-2" 
