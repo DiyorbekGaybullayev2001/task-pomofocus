@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { FaEdit, FaTrash, FaPlus, FaEllipsisV } from "react-icons/fa";
 import Navbar from "./navbar";
 import { RiCloseLargeLine } from "react-icons/ri";
+import DropdownMenu2 from "./taskmenu";
 
 
 const PomodoroTimer = () => {
@@ -145,9 +146,10 @@ const PomodoroTimer = () => {
       
       <div className="border-b border-gray-200 flex justify-between w-[90%] sm:w-[77%] md:w-[55%] lg:w-[45%] xl:w-[35%] mt-[30px] p-[10px]">
         <h1 className="text-xl font-bold text-white">Tasks</h1>
-        <button className="flex items-center cursor-pointer bg-[#ffffff73] text-white px-2 py-2 rounded-md"> 
+        {/* <button className="flex items-center cursor-pointer bg-[#ffffff73] text-white px-2 py-2 rounded-md"> 
             <FaEllipsisV /> 
-          </button>
+          </button> */}
+          <DropdownMenu2/>
       </div>
 
       <div className="mt-[40px] p-4 rounded-lg shadow-md border-dashed border-2 border-[#bbbbbbae] w-96">
